@@ -17,13 +17,20 @@ All the documentation is writed at SPANISH for fast and easy understanding.
 --------------------------------------------------------------------------------------------
 ## LIST OF CONCEPTS
 
-## API FACHADE
-## DOCKER
-## .NET FRAKEWORK
-## .NET CORE
-## VOLUMENTES
-## MONTAJE DE ENLACE
-## MONTAJE TMPFS
+#Kubernetes 
+Sirve para administrar clusteres, tambien como orquestador y administrador de 
+# Azure Kubernetes Service
+Es la solucion de Azure de Kubernetes
+# Helm
+Programa para administrar clusters complejos de Kibernetes
+# Azure Dev Space
+Proporciona un lugar donde almacenar contenedores de manera comun entre programadores.
+# Desarrollo bucle
+Especifica todo el flujo de desarrollo de los programadores que esta excento del interaccion con DevOps
+# Dockerfile
+Archivo con la configuracion necesaria para iniciar una imagen, esta se recomienda debe ir en la carpeta raiz de la implementacion
+# Docker-compose.yml
+Archivo para administrar los orquestadores, varias configuraciones de microservicios
 
 
 
