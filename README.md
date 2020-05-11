@@ -49,19 +49,19 @@ Puerta de enlace de API de codigo abierto y facil implementacion para proyectos 
 Libreria para reducir la dependencia de clases entre funcionalidades
 ### Microfontend
 Patron de presentacion en donde se programan componentes visuales independientementes asociadas cada uno a un microservicio diferente. 
-#Kubernetes 
+### Kubernetes 
 Sirve para administrar clusteres, tambien como orquestador y administrador de 
-# Azure Kubernetes Service
+### Azure Kubernetes Service
 Es la solucion de Azure de Kubernetes
-# Helm
+### Helm
 Programa para administrar clusters complejos de Kibernetes
-# Azure Dev Space
+### Azure Dev Space
 Proporciona un lugar donde almacenar contenedores de manera comun entre programadores.
-# Desarrollo bucle
+### Desarrollo bucle
 Especifica todo el flujo de desarrollo de los programadores que esta excento del interaccion con DevOps
-# Dockerfile
+### Dockerfile
 Archivo con la configuracion necesaria para iniciar una imagen, esta se recomienda debe ir en la carpeta raiz de la implementacion
-# Docker-compose.yml
+### Docker-compose.yml
 Archivo para administrar los orquestadores, varias configuraciones de microservicios
 
 
