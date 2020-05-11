@@ -63,6 +63,14 @@ Especifica todo el flujo de desarrollo de los programadores que esta excento del
 Archivo con la configuracion necesaria para iniciar una imagen, esta se recomienda debe ir en la carpeta raiz de la implementacion
 ### Docker-compose.yml
 Archivo para administrar los orquestadores, varias configuraciones de microservicios
+### Bus de eventos
+Hace referencia a la comunicacion entre microservicios y hace referencia a la comunicacion asincrona entre microservicios
+### SRP 
+Principio de responsabilidad unica
+### Arquitectura orientada a eventos EDA
+Principio donde se orienta el flujo a los eventos cambiantes de los objetos 
+### Swashbuckle
+Libreria para generar documentacion automatica en swagger
 
 
 
