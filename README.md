@@ -1,21 +1,20 @@
-## Microservices
+# Microservices
 This Repository hold all the projects to study Microservices apply to .Net Architecture with .Net Core and .Net Framework
 
 This list show the projects folders.
 
-* myMicroservice.
-* DockerFiles.
-* Books and Doc References.
+* Books
+* DockerFiles
+* eShopOnContaines 
 * Images
+* myMicroservice
+* SQLServer
 
-This repository collect all the practice concepts from the book .Net Microservices Architecture for Containerized .Net Applications. 
+This repository collect all the practice concepts from the book .Net Microservices Architecture for Containerized .Net Applications. For an easy understanding I collect the important concepts from de book to a resume document. 
 
-For an easy understand I collect the important concepts from de book to and resume document. 
-
-All the documentation is writed at SPANISH for fast and easy understanding.
-
+All the documentation was writed at SPANISH for fast and easy understanding.
 --------------------------------------------------------------------------------------------
-## LIST OF CONCEPTS
+## LISTA DE CONCEPTOS
 
 ### Volumenes
 Espacio de ficheros para administrar archivos de las imagenes de docker
@@ -71,6 +70,25 @@ Principio de responsabilidad unica
 Principio donde se orienta el flujo a los eventos cambiantes de los objetos 
 ### Swashbuckle
 Libreria para generar documentacion automatica en swagger
+### NSwag
+Otra libreria similar a Swagger que realiza las mismas funciones
+### Azure Key Vault
+Servicio para almacenar y administrar valores secretos de la aplicacion. Por ejemplo cadenas de conexion, tokens, keys etc
+### Control de versiones de API
+Tecnica para versionar las implementaciones de API, puede ser por URL, cadena de consulta o version en el encabezado
+### HATEOAS
+Hipertexto como motor del estado de la aplicación. La respuesta a cada solicitud contiene la información necesaria para pasar de un estado a otro, Las respuestas API pueden sugereir los proximos llamdos. 
+### AutoRest
+Herramienta para llamar por linea de comandos clases e implementaciones API. 
+### .dockerignore 
+Se usa para omitir archivos.
+### docker-compose.yml 
+Se usa para crear microservicios
+### docker-compose.override.yml docker-compose.prod.yml docker-compose-test.yml
+Se usa para configurar el entorno de microservicios
+### ${MY_VAR}
+Forma de llamar una variable de entorno dentro de las configuraciones de Docker
+
 
 
 

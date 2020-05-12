@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base # IMAGE AS BASE SMALL
+1 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base # IMAGE AS BASE SMALL
 2 WORKDIR /app # CREATE THE DIRECTORY PATH
 3 EXPOSE 80 # PORT
 4
