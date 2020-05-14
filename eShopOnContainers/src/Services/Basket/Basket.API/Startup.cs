@@ -326,6 +326,12 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
             services.AddTransient<OrderStartedIntegrationEventHandler>();
         }
 
+
+        /// <summary>
+        /// @mariobot
+        /// In this section configure the event services to the project
+        /// </summary>
+        /// <param name="app"></param>
         private void ConfigureEventBus(IApplicationBuilder app)
         {
             var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();

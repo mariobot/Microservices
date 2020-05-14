@@ -88,6 +88,23 @@ Se usa para crear microservicios
 Se usa para configurar el entorno de microservicios
 ### ${MY_VAR}
 Forma de llamar una variable de entorno dentro de las configuraciones de Docker
+### Redis
+Es un motor de base de datos en memoria basado en tablas Hash, viene de la palabra remote dictionary service, servicio de diccionario remoto
+### Eventos de integracion
+Consiste en suscribir a diferentes microservicios para que respondan a eventos de un microservicio. utilizan un bus de eventos para notificar los mensajes entre diferentes microservicios
+### RabbitMQ Azure Service Bus
+Bus de servicios (eventos), tecnologías de mensajería de infraestructura
+### NServiceBus, MassTransit y Brighter
+Bus de servicios (eventos) de codigo abierto, tecnologías de mensajería de infraestructura
+### Patron Observador
+Un objeto proporciona informacion de los eventos a otros eventos interesados
+### Patron publicacion/suscripcion Pub/Sus
+Funciona igual que el patron observador salvo que utiliza un componente adicional de llamado agente, mensaje de agente o bus de eventos, estos presentan la mejora de desvincular las dependencias gracias a los agentes. el publicador y los suscriptores se desvinculan gracias al bus de eventos o al mensaje de agente mencionados.
+### 
+###
+###
+###
+###
 
 
 
