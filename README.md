@@ -95,12 +95,35 @@ Consiste en suscribir a diferentes microservicios para que respondan a eventos d
 ### RabbitMQ Azure Service Bus
 Bus de servicios (eventos), tecnologías de mensajería de infraestructura
 ### NServiceBus, MassTransit y Brighter
-Bus de servicios (eventos) de codigo abierto, tecnologías de mensajería de infraestructura
+Bus de servicios (eventos) de codigo abierto, 
 ### Patron Observador
 Un objeto proporciona informacion de los eventos a otros eventos interesados
 ### Patron publicacion/suscripcion Pub/Sus
-Funciona igual que el patron observador salvo que utiliza un componente adicional de llamado agente, mensaje de agente o bus de eventos, estos presentan la mejora de desvincular las dependencias gracias a los agentes. el publicador y los suscriptores se desvinculan gracias al bus de eventos o al mensaje de agente mencionados.
+Funciona igual que el patron observador salvo que utiliza un componente adicional llamado "agente", "mensaje de agente" o "bus de eventos", estos presentan la mejora de desvincular las dependencias gracias a los agentes. el publicador y los suscriptores se desvinculan gracias al bus de eventos o al mensaje de agente mencionados.
+### Pruebas unitarias
+Corresponde a pruebas respecto a una sola funcionalidad.  
+### Pruebas de integracion
+Corresponde a pruebas entre diferentes funcionalidades por ejemplo BD, Instancias, Controladores todas dentro de un flujo.
+### Pruebas funcionales
+Corresponde a pruebas de todo un componente, Esto garantiza que la aplicación funcione según lo esperado
+desde la perspectiva del usuario
+### Pruebas de servicios
+Corresponde a pruebas complejas de un componente de microservicio teneindo en cuenta pruebas de conectividad, puesta de servicio multiple, concurrencia, inicializacion de imagen entre otras.
+### IWebHost
+Interface para ejecutar tareas en segundo plano o background, implementada en .net core 1.0 y 2.0
+### IHost
+Interface para ejecutar tareas en segundo plano versiones posteriores .net core 2.0 es mas ligero y carece de todas las caracteristicas de HTTP, MVC o API Web. En conclusion si las tareas en segundo plano no tienen nada que ver con HTTP 
+debe usar IHost.
 ### 
+###
+###
+###
+###
+###
+###
+###
+###
+###
 ###
 ###
 ###
