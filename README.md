@@ -3,12 +3,12 @@ This Repository hold all the projects to study Microservices apply to .Net Archi
 
 This list show the projects folders.
 
-* Books
-* DockerFiles
-* eShopOnContaines 
-* Images
-* myMicroservice
-* SQLServer
+* Books (README)[../books/readme.md]
+* DockerFiles (README)[../dockerfiles/readme.md]
+* eShopOnContaines (README)[../eShopOnContainers/readme.md]
+* Images (README) [../dockerfiles/readme.md]
+* myMicroservice (README)[../myMicroservice/readme.md]
+* SQLServer (README)[../SQLServer/readme.md]
 
 This repository collect all the practice concepts from the book .Net Microservices Architecture for Containerized .Net Applications. For an easy understanding I collect the important concepts from de book to a resume document. 
 
