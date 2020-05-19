@@ -118,11 +118,15 @@ Interface para ejecutar tareas en segundo plano o background, implementada en .n
 ### IHost
 Interface para ejecutar tareas en segundo plano versiones posteriores .net core 2.0 es mas ligero y carece de todas las caracteristicas de HTTP, MVC o API Web. En conclusion si las tareas en segundo plano no tienen nada que ver con HTTP 
 debe usar IHost.
+### Commands & Queries
+Especifica un patron donde los Commands tienen la responsabilidad de las actualizaciones eliminaciones e inserciones mientras que Queries tiene la responsabilidad exclusiva de consultas al dominio de datos. 
+### Dapper
+Es un ORM para .Net mas liviano y ligero
+### DTO
+Objeto de transferencia de datos, Data Transfer Object
+### ProducesResponseType
+Anotacion para proporcionar mayor informacion a las APIs sobre el tipo de respuesta. Es utilizado por Swashbuckle par adicionar la descripcion de la API.
 ### 
-###
-###
-###
-###
 ###
 ###
 ###
