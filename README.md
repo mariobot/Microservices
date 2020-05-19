@@ -131,11 +131,12 @@ Define los trabajos que el software debe hacer y dirige los objetos de dominio e
 Responsable de representar conceptos del negocio, información sobre la situación del negocio y reglas de negocios
 ### Infraestructure Layer - Modelo de Infraestructura
 El nivel de infraestructura es la forma en que los datos que inicialmente se conservan en las entidades de dominio (en la memoria) se guardan en bases de datos o en otro almacén permanente.
+### Dominio anémico
+El modelo de dominio anémico es simplemente un diseño de estilo de procedimientos. Los objetos de entidad anémicos no son objetos reales, ya que carecen de comportamiento (métodos). Solo contienen propiedades de datos y, por tanto, no se trata de un diseño orientado a objetos.
+### 
 ###
 ###
-###
-###
-###
+###cd
 
 
 
