@@ -1,18 +1,11 @@
 # Microservices
 This Repository hold all the projects to study Microservices apply to .Net Architecture with .Net Core and .Net Framework
 
-This list show the projects folders.
-
-* [Books](microservices/books/) [README](books/readme)
-* [DockerFiles](microservices/dockerfiles) [README](dockerfiles/readme.md)
-* [eShopOnContaines](eShopOnContainers) [README](eShopOnContainers/readme.md)
-* [Images](dockerfiles/readme.md) [README](dockerfiles/readme.md)
-* [myMicroservice](myMicroservice/readme.md) [README](myMicroservice/readme.md)
-* [SQLServer](SQLServer/readme.md) [README](SQLServer/readme.md)
-
-see documentation:
-    * <a href="Microservices/books">myLib/</a>
-    * <a href="Microservices/DockerFiles/dockerfiles/readme.md">myLib/README.md</a>
+* [Books](https://github.com/mariobot/Microservices/tree/master/Books)
+* [DockerFiles](https://github.com/mariobot/Microservices/tree/master/DockerFiles)
+* [SQLServer](https://github.com/mariobot/Microservices/tree/master/SQLServer)
+* [eShopOnContaines](https://github.com/mariobot/Microservices/tree/master/eShopOnContainers)
+* [myMicroservice](https://github.com/mariobot/Microservices/tree/master/myMicroservice)
 
 This repository collect all the practice concepts from the book .Net Microservices Architecture for Containerized .Net Applications. For an easy understanding I collect the important concepts from de book to a resume document. 
 
@@ -126,11 +119,18 @@ Es un ORM para .Net mas liviano y ligero
 Objeto de transferencia de datos, Data Transfer Object
 ### ProducesResponseType
 Anotacion para proporcionar mayor informacion a las APIs sobre el tipo de respuesta. Es utilizado por Swashbuckle par adicionar la descripcion de la API.
-### 
-###
-###
-###
-###
+### Persistencia de datos
+Almacenamiento y actualizacoin de datos
+### POCO
+Acronimo de Plain Old CLR Object, Son clases simples que no dependen de un Framework en especial
+### DDD
+Propone un modelado basado en la realidad de negocio con relación a sus casos de uso. En el contexto de la creación de aplicaciones, DDD hace referencia a los problemas como dominios. Describe áreas con problemas independientes como contextos delimitados. Lo importante no son los patrones en sí, sino organizar el código para que esté en línea con los problemas del negocio y utilizar los mismos términos empresariales (lenguaje de dominio)
+### Aplication Layer - Modelo de Aplicacion
+Define los trabajos que el software debe hacer y dirige los objetos de dominio expresivo para que resuelvan problemas. No contiene reglas de negocios ni conocimientos sino que solo coordina tareas y delega trabajo a colaboraciones de objetos de dominio en el siguiente nivel
+### Domain model Layer - Modelo de Dominio
+Responsable de representar conceptos del negocio, información sobre la situación del negocio y reglas de negocios
+### Infraestructure Layer - Modelo de Infraestructura
+El nivel de infraestructura es la forma en que los datos que inicialmente se conservan en las entidades de dominio (en la memoria) se guardan en bases de datos o en otro almacén permanente.
 ###
 ###
 ###
