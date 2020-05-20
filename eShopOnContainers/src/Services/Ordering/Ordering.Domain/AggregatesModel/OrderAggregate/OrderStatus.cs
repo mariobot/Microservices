@@ -6,6 +6,7 @@
     using System.Collections.Generic;
     using System.Linq;
 
+    // Clase de enumeracion
     public class OrderStatus
         : Enumeration
     {

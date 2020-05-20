@@ -7,6 +7,7 @@ using System.Linq;
 
 namespace Microsoft.eShopOnContainers.Services.Ordering.Domain.AggregatesModel.OrderAggregate
 {
+    // Raiz agragada
     public class Order
         : Entity, IAggregateRoot
     {

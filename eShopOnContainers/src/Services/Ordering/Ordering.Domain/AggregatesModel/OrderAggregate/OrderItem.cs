@@ -4,6 +4,7 @@ using System;
 
 namespace Microsoft.eShopOnContainers.Services.Ordering.Domain.AggregatesModel.OrderAggregate
 {
+    // ENTIDAD SECUNDARIA
     public class OrderItem
         : Entity
     {

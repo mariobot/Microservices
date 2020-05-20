@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace Microsoft.eShopOnContainers.Services.Ordering.Domain.AggregatesModel.OrderAggregate
 {
+    // Este es el Objeto Valor
     public class Address : ValueObject
     {
         public String Street { get; private set; }
