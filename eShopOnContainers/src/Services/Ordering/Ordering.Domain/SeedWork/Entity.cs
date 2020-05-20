@@ -4,6 +4,7 @@
     using MediatR;
     using System.Collections.Generic;
 
+    // Clase base para los agregados    
     public abstract class Entity
     {
         int? _requestedHashCode;

@@ -20,6 +20,7 @@ namespace Ordering.Infrastructure.EntityConfigurations
             orderConfiguration.Property(o => o.Id)
                 .UseHiLo("orderseq", OrderingContext.DEFAULT_SCHEMA);
 
+            // En esta parte se mapea el objeto valor direccion
             //Address value object persisted as owned entity type supported since EF Core 2.0
             orderConfiguration
                 .OwnsOne(o => o.Address, a =>

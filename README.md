@@ -123,7 +123,7 @@ Anotacion para proporcionar mayor informacion a las APIs sobre el tipo de respue
 Almacenamiento y actualizacoin de datos
 ### POCO
 Acronimo de Plain Old CLR Object, Son clases simples que no dependen de un Framework en especial
-### DDD
+### DDD Domain-Driven Design (Diseño guiado por el Dominio)
 Propone un modelado basado en la realidad de negocio con relación a sus casos de uso. En el contexto de la creación de aplicaciones, DDD hace referencia a los problemas como dominios. Describe áreas con problemas independientes como contextos delimitados. Lo importante no son los patrones en sí, sino organizar el código para que esté en línea con los problemas del negocio y utilizar los mismos términos empresariales (lenguaje de dominio)
 ### Aplication Layer - Modelo de Aplicacion
 Define los trabajos que el software debe hacer y dirige los objetos de dominio expresivo para que resuelvan problemas. No contiene reglas de negocios ni conocimientos sino que solo coordina tareas y delega trabajo a colaboraciones de objetos de dominio en el siguiente nivel
@@ -133,10 +133,18 @@ Responsable de representar conceptos del negocio, información sobre la situaci�
 El nivel de infraestructura es la forma en que los datos que inicialmente se conservan en las entidades de dominio (en la memoria) se guardan en bases de datos o en otro almacén permanente.
 ### Dominio anémico
 El modelo de dominio anémico es simplemente un diseño de estilo de procedimientos. Los objetos de entidad anémicos no son objetos reales, ya que carecen de comportamiento (métodos). Solo contienen propiedades de datos y, por tanto, no se trata de un diseño orientado a objetos.
+### Entidad de dominio
+Corresponde a una entidad cuyo valor y comportamiento es importante para el negocio. Toda entidad o clase que sea imperativamente critica para el negocio se clasifica como una entidad de dominio. Las entidades de dominio no deben estar acopladas a la infraestructura, ni depender de EntityFramework o de alguna base de datos.
+### Agregado
+Describe un clúster o grupo de entidades y comportamientos que se pueden tratar como una unidad coherente. Utilizada para agrupar la logica de dominio.
+### Raíz agregada
+Tener varios objetos de valor y entidades secundarias, con todas las entidades y objetos trabajando de forma conjunta para implementar las transacciones y el comportamiento necesarios.
 ### 
-###
-###
-###cd
+### AsReadOnly
+proporcionar acceso de solo lectura mediante al método
+### SeedWork 
+Esta carpeta contiene las clases base personalizadas que puede usar como base de los objetos de valor y las entidades de dominio. Tambien suele ser nombrada Common, SharedKernel.
+### 
 
 
 
