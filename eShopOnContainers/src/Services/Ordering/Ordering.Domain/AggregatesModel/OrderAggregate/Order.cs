@@ -65,6 +65,7 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.Domain.AggregatesModel.O
 
             // Add the OrderStarterDomainEvent to the domain events collection 
             // to be raised/dispatched when comitting changes into the Database [ After DbContext.SaveChanges() ]
+            // En esta parte se invoca el evento de dominio
             AddOrderStartedDomainEvent(userId, userName, cardTypeId, cardNumber,
                                        cardSecurityNumber, cardHolderName, cardExpiration);
         }
@@ -112,6 +113,7 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.Domain.AggregatesModel.O
         {
             if (_orderStatusId == OrderStatus.Submitted.Id)
             {
+                // En esta parte se invoca el evento de dominio
                 AddDomainEvent(new OrderStatusChangedToAwaitingValidationDomainEvent(Id, _orderItems));
                 _orderStatusId = OrderStatus.AwaitingValidation.Id;
             }
@@ -121,6 +123,7 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.Domain.AggregatesModel.O
         {
             if (_orderStatusId == OrderStatus.AwaitingValidation.Id)
             {
+                // En esta parte se invoca el evento de dominio
                 AddDomainEvent(new OrderStatusChangedToStockConfirmedDomainEvent(Id));
 
                 _orderStatusId = OrderStatus.StockConfirmed.Id;

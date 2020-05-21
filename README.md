@@ -139,12 +139,25 @@ Corresponde a una entidad cuyo valor y comportamiento es importante para el nego
 Describe un clúster o grupo de entidades y comportamientos que se pueden tratar como una unidad coherente. Utilizada para agrupar la logica de dominio.
 ### Raíz agregada
 Tener varios objetos de valor y entidades secundarias, con todas las entidades y objetos trabajando de forma conjunta para implementar las transacciones y el comportamiento necesarios.
-### 
 ### AsReadOnly
 proporcionar acceso de solo lectura mediante al método
 ### SeedWork 
 Esta carpeta contiene las clases base personalizadas que puede usar como base de los objetos de valor y las entidades de dominio. Tambien suele ser nombrada Common, SharedKernel.
+### Objeto de Valor
+Son objetos que no requieren ninguna identidad ni ningún seguimiento de identidad, Deben ser inmutables.
+### Enumeraciones Empresariales
+Forma de implementacion de enumeraciones para logica de dominio
+### Reglas invariables
+Las reglas invariables se expresan como contratos y si se infringen, se generan excepciones o notificaciones. se aplican para corroborar la integridad de las entidades de dominio. 
+### IValidatableObject
+Proporciona la funcionalidad para invalidar un objeto, muy utilizado en MVC y API pero no aplicable para logica de dominio.
+### Validación en dos pasos
+hace referencia a usar la validación de nivel de campo en los objetos de transferencia de datos (DTO) de comandos y la validación de nivel de dominio dentro de las entidades.
 ### 
+###
+###
+###
+
 
 
 

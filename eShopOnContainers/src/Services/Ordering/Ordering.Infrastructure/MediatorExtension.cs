@@ -8,6 +8,7 @@ namespace Ordering.Infrastructure
 {
     static class MediatorExtension
     {
+        // Para definir los Eventos de Dominios
         public static async Task DispatchDomainEventsAsync(this IMediator mediator, OrderingContext ctx)
         {
             var domainEntities = ctx.ChangeTracker

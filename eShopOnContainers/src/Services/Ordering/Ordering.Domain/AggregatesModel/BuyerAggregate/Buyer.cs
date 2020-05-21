@@ -37,6 +37,7 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.Domain.AggregatesModel.B
 
             if (existingPayment != null)
             {
+                // En esta parte se invoca un evento de dominio
                 AddDomainEvent(new BuyerAndPaymentMethodVerifiedDomainEvent(this, existingPayment, orderId));
 
                 return existingPayment;
@@ -46,6 +47,7 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.Domain.AggregatesModel.B
 
             _paymentMethods.Add(payment);
 
+            // En esta parte se invoca un evento de dominio
             AddDomainEvent(new BuyerAndPaymentMethodVerifiedDomainEvent(this, payment, orderId));
 
             return payment;
