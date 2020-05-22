@@ -153,7 +153,27 @@ Las reglas invariables se expresan como contratos y si se infringen, se generan 
 Proporciona la funcionalidad para invalidar un objeto, muy utilizado en MVC y API pero no aplicable para logica de dominio.
 ### Validación en dos pasos
 hace referencia a usar la validación de nivel de campo en los objetos de transferencia de datos (DTO) de comandos y la validación de nivel de dominio dentro de las entidades.
+### Evento de dominio
+Es algo que ha sucedido en el dominio que quiere que otras partes del mismo dominio (en curso) tengan en cuenta. Normalmente las partes notificadas reaccionan de alguna manera a los eventos. los eventos de dominio le ayudan a expresar explícitamente las reglas de dominio, en función del lenguaje ubicuo proporcionado por los expertos de dominio. Además, los eventos de dominio permiten una mejor separación de cuestiones entre clases dentro del mismo dominio.
+### Lenguaje ubicuo
+Es el concepto de definir un lenguaje (hablado y escrito) que se usa por igual entre los desarrolladores y los expertos en dominios para evitar incoherencias y falta de comunicación debido a problemas de traducción y malentendidos. Verá la misma terminología en el código, las conversaciones entre cualquier miembro del equipo, las especificaciones funcionales y otras cosas. 
+### Dominion de Infraestructura o Persistencia
+Corresponde al proyecto encargado de los datos, todo lo pertinente a acceso de datos que se hospedan dentro de los límites
+de un microservicio (es decir, la base de datos de un microservicio). Contienen la implementación real de componentes como repositorios y clases de unidad de trabajo, como los objetos DbContext de Entity Framework.
+### Repositorio
+Un repositorio realiza las tareas de un intermediario entre los niveles de modelo de dominio y asignación de datos, actuando de forma similar a un conjunto de objetos de dominio en memoria. Los objetos de cliente generan consultas mediante declaraciones y las envían a los repositorios para obtener las respuestas. Conceptualmente, un repositorio encapsula un conjunto de objetos almacenados en la base de datos y las operaciones que se pueden realizar en ellos, proporcionando una manera de que esté más cerca de la capa de persistencia. Además, los repositorios admiten la finalidad de separar, con claridad y en una dirección, la dependencia entre el dominio de trabajo y la asignación de datos. Recuerde que la creacion de un Repositorio debe estar asociado al agregado y no a la tabla. Es una mala practica crear un repositorio por table, debe ser un repositorio por agregado.
+### Una unidad de trabajo 
+Se conoce como una sola transacción que implica varias operaciones de inserción, actualización o eliminación. En otras palabras, significa que para una acción de usuario específica todas las transacciones de inserción, actualización o eliminación se administran en una única operación
+### Omisión de persistencia y omisión de infraestructura
+Quiere decir que la logica de dominio no depende ni esta acoplado a la infraestructura o acceso a datos. 
+### Algoritmo Hi-Lo 
+Asigna identificadores únicos a filas de la tabla, pero no depende del almacenaje inmediato de la fila en la base de datos. Esto le permite empezar a usar los identificadores de forma inmediata, como sucede con los identificadores de la base de datos secuencial normal.
 ### 
+###
+###
+###
+###
+###
 ###
 ###
 ###

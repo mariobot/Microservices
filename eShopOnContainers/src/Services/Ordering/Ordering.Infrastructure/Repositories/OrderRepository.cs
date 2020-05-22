@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 
 namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure.Repositories
 {
+    // Este repositorio se realiza por el agregado de Ordenes
+    // Su interface se define en el dominio
     public class OrderRepository
         : IOrderRepository
     {
