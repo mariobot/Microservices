@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace Microsoft.eShopOnContainers.Web.Shopping.HttpAggregator.Controllers
 {
+    // Puerta de enlace de api para la implementacion WEB de los servicios de Ordenes
     [Route("api/v1/[controller]")]
     [Authorize]
     [ApiController]

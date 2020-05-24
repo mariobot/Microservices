@@ -12,6 +12,9 @@ using Newtonsoft.Json;
 
 namespace Microsoft.eShopOnContainers.Web.Shopping.HttpAggregator.Controllers
 {
+    // Estos controladores tienen la funcion operar como puerta de enlace de api para el aplicativo web
+    // Recordar que una de las buenas practicas corresponde a realizar una implementacion de getway por aplicativo final
+    // es por esto que encuentras un getaway para el proyecto Mobiel, este para el caso web
     [Route("api/v1/[controller]")]
     [Authorize]
     [ApiController]

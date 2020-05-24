@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Microsoft.eShopOnContainers.Web.Shopping.HttpAggregator.Infrastructure
 {
+    // Aqui se maneja la infraestructura de permisos para las apis
     public class HttpClientAuthorizationDelegatingHandler
          : DelegatingHandler
     {

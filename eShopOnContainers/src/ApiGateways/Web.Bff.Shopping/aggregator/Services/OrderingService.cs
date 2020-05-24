@@ -12,6 +12,7 @@ using Grpc.Core;
 
 namespace Microsoft.eShopOnContainers.Web.Shopping.HttpAggregator.Services
 {
+    // Estos proyectos realizan la implementacion de los Servicios en las APIs
     public class OrderingService : IOrderingService
     {
         private readonly UrlsConfig _urls;
