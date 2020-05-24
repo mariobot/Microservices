@@ -5,23 +5,27 @@ using Microsoft.eShopOnContainers.Services.Ordering.Infrastructure;
 
 namespace Ordering.Infrastructure.EntityConfigurations
 {
+    // En esta clase de configuracion de Orden item se establecen todas las propiedades de la entidad en la base de datos
     class OrderItemEntityTypeConfiguration
         : IEntityTypeConfiguration<OrderItem>
     {
         public void Configure(EntityTypeBuilder<OrderItem> orderItemConfiguration)
         {
+            // Nombre de tabla
             orderItemConfiguration.ToTable("orderItems", OrderingContext.DEFAULT_SCHEMA);
 
+            // Identificador
             orderItemConfiguration.HasKey(o => o.Id);
 
             orderItemConfiguration.Ignore(b => b.DomainEvents);
-
+            
             orderItemConfiguration.Property(o => o.Id)
                 .UseHiLo("orderitemseq");
 
             orderItemConfiguration.Property<int>("OrderId")
                 .IsRequired();
 
+            // Propiedades
             orderItemConfiguration
                 .Property<decimal>("_discount")
                 .UsePropertyAccessMode(PropertyAccessMode.Field)
