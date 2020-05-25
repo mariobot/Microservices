@@ -14,6 +14,9 @@ namespace aspnetcoreapp
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+
+            // Imprimir los argumentos de entrada
+            Console.WriteLine(args);
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

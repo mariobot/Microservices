@@ -21,12 +21,14 @@ namespace aspnetcoreapp
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        // Este metodo es llamado por el runtime. Use este metodo para adicionar servicios.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        // Use este metodo para configurar las peticiones
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -40,9 +42,13 @@ namespace aspnetcoreapp
                 app.UseHsts();
             }
 
+            // Usar redireccionamiento Http
             app.UseHttpsRedirection();
+            
+            // Implementa archivos estaticos
             app.UseStaticFiles();
 
+            // Usar enrutamiento
             app.UseRouting();
 
             app.UseAuthorization();
