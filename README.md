@@ -178,10 +178,14 @@ Esta sintaxis llama a la VARIABLE de entorno en .env sino existe usa entonces mo
 Son librerias como Ninject o Autofac que permiten implementar los principios de inversion de dependencias por medio de la incersion de dependencias. 
 ### Principio SOLID 
 Principio de responsabilidad única, Principio de abierto y cerrado, Principio de sustitución de Liskov, Principio de segregación de interfaces, Principio de inversión de dependencias
-###
-###
-###
-###
+### Inyeccion de dependencias
+Cuando cualquiera de los constructores tiene una dependencia de IMyCustomRepository (interfaz o abstracción), el contenedor de IoC insertará una instancia de la clase de implementación MyCustomSQLServerRepository. Esta es una descripcion practica del concepto. 
+### Clase comando
+Un comando es una solicitud para que el sistema realice una acción que cambia el estado del sistema. Los comandos son imperativos y se deben procesar una sola vez. Un comando no es un hecho del pasado; es solo una solicitud y, por tanto, se puede denegar. es que debe procesarse una sola vez por un único receptor. Esto se debe a que un comando es una única acción o transacción que se quiere realizar en la aplicación.
+### Un mediador 
+Es un objeto que encapsula el "cómo" de este proceso: coordina la ejecución en función del estado, laforma de invocar un controlador de comandos o la carga que se proporciona al controlador. Con un componente de mediador se pueden aplicar cuestiones transversales de forma centralizada y transparente aplicando elementos Decorador.
+### Patron mediador
+Simplifica la implementacion de Inyeccion de Dependencias para ser en funcion de una especificacion comun implementada por librerias como MediatR. 
 
 
 
