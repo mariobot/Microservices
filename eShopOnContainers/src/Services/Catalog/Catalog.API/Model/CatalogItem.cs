@@ -31,7 +31,6 @@ namespace Microsoft.eShopOnContainers.Services.Catalog.API.Model
         // Available stock at which we should reorder
         public int RestockThreshold { get; set; }
 
-
         // Maximum number of units that can be in-stock at any time (due to physicial/logistical constraints in warehouses)
         public int MaxStockThreshold { get; set; }
 
@@ -41,7 +40,6 @@ namespace Microsoft.eShopOnContainers.Services.Catalog.API.Model
         public bool OnReorder { get; set; }
 
         public CatalogItem() { }
-
 
         /// <summary>
         /// Decrements the quantity of a particular item in inventory and ensures the restockThreshold hasn't

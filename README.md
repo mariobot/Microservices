@@ -168,11 +168,16 @@ Se conoce como una sola transacción que implica varias operaciones de inserció
 Quiere decir que la logica de dominio no depende ni esta acoplado a la infraestructura o acceso a datos. 
 ### Algoritmo Hi-Lo 
 Asigna identificadores únicos a filas de la tabla, pero no depende del almacenaje inmediato de la fila en la base de datos. Esto le permite empezar a usar los identificadores de forma inmediata, como sucede con los identificadores de la base de datos secuencial normal.
-### 
-###
-###
-###
-###
+### Persistencia No Relacional
+Concepto que hace referencia a que la base de datos no esta acoplada a una estructura relacional, esto aplica para las bases de datos No relacionales o bases de datos de documentos.
+### Azure Cosmos DB
+Es la solucion de Microsoft propuesta para manejar bases de datos NoSQL
+### ${VARIABLE:-mongodb://nosqldata}
+Esta sintaxis llama a la VARIABLE de entorno en .env sino existe usa entonces mongodb://nosqldata por ejemplo
+### Contenedores de Inversión de control (IoC)
+Son librerias como Ninject o Autofac que permiten implementar los principios de inversion de dependencias por medio de la incersion de dependencias. 
+### Principio SOLID 
+Principio de responsabilidad única, Principio de abierto y cerrado, Principio de sustitución de Liskov, Principio de segregación de interfaces, Principio de inversión de dependencias
 ###
 ###
 ###
