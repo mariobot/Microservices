@@ -186,6 +186,19 @@ Un comando es una solicitud para que el sistema realice una acción que cambia e
 Es un objeto que encapsula el "cómo" de este proceso: coordina la ejecución en función del estado, laforma de invocar un controlador de comandos o la carga que se proporciona al controlador. Con un componente de mediador se pueden aplicar cuestiones transversales de forma centralizada y transparente aplicando elementos Decorador.
 ### Patron mediador
 Simplifica la implementacion de Inyeccion de Dependencias para ser en funcion de una especificacion comun implementada por librerias como MediatR. 
+### Resistencia 
+Es la capacidad de recuperarse de errores y seguir funcionando. No se trata de evitar los errores, sino de aceptar el hecho de que se producirán errores y responder a ellos para evitar el tiempo de inactividad o la pérdida de datos.
+### Patrón de interruptor. 
+En este enfoque, el proceso de cliente supervisa el número de solicitudes con error. Si la tasa de errores supera el límite establecido, se activa un "interruptor" para que los intentos adicionales fallen de inmediato. (Si se producen errores en un gran número de solicitudes, esto sugiere que el servicio no está disponible y que enviar solicitudes no sirve de nada.) Tras un período de tiempo de expiración, se verifica el funcionamiento y se desactivar el interruptor.
+### 
+###
+###
+###
+###
+###
+###
+
+
 
 
 
