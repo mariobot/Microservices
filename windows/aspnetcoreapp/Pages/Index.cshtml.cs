@@ -19,7 +19,12 @@ namespace aspnetcoreapp.Pages
 
         public void OnGet()
         {
+            
+        }
 
+        public static string Mensaje()
+        {
+            return "Microservices orientada a contenedores Docker";
         }
     }
 }

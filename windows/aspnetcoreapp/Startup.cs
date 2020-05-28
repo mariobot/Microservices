@@ -19,8 +19,7 @@ namespace aspnetcoreapp
         }
 
         public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
+        
         // Este metodo es llamado por el runtime. Use este metodo para adicionar servicios.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -43,7 +42,8 @@ namespace aspnetcoreapp
             }
 
             // Usar redireccionamiento Http
-            app.UseHttpsRedirection();
+            // No usar redireccionamiento https
+            // app.UseHttpsRedirection();
             
             // Implementa archivos estaticos
             app.UseStaticFiles();

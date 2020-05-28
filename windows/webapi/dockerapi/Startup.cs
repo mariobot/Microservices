@@ -36,7 +36,8 @@ namespace dockerapi
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            // NOT USE HTTPS
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
