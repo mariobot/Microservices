@@ -1,3 +1,26 @@
+# Microservicios
+
+### Como esta organizado el proyecto
+
+El proyecto esta dividido en varios grupos de proyectos. (32~) La siguientes son las carpetas de SRC
+
+#ApiGetaways
+Se crea una puerta de enlace de API por cada proyecto de implementacion por eso se crea un proyecto para la parte web, como otro para la parte Mobil, esto con la finalidad de segmentar funcionalidades y operaciones en el Api Getaway. 
+Envoy permite enrutar las peticiones, de acuerdo a una arquitectura de proxy.
+
+#Mobile 
+Maneja toda la implementacion de Xamarin para ejecutar el aplicativo. 
+
+#Web
+Maneja toda la implementacion de web dil aplicativo entre la cual esta
+## WebMVC IMPLEMENTACION REALIZADA EN ASP MVC
+## WebSPA IMPLEMENTACION REALIZADA CON ANGULAR
+## WebStatus swager para ver los estados de los servicios y del proyecto en general
+## WebhookCliet
+
+# Services
+Los servicios estan divididos en la carpeta de Servicios los cuales estan expuestos por medio de apis en su mayoria para los diferentes proyectos.
+
 
 
 

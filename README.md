@@ -9,10 +9,10 @@ This Repository hold all the projects to study Microservices apply to .Net Archi
 
 This repository collect all the practice concepts from the book .Net Microservices Architecture for Containerized .Net Applications. For an easy understanding I collect the important concepts from de book to a resume document. 
 
-All the documentation was writed at SPANISH for fast and easy understanding.
+All the documentation was writed at SPANISH for fast and easy understanding.[Explicacion Proyecto](https://github.com/mariobot/Microservices/tree/master/Explain.md)
 --------------------------------------------------------------------------------------------
-## LISTA DE CONCEPTOS
-
+## LISTA DE CONCEPTOS 
+--------------------------------------------------------------------------------------------
 ### Volumenes
 Espacio de ficheros para administrar archivos de las imagenes de docker
 ### Montaje de enlace
