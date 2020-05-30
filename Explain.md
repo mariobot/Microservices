@@ -4,23 +4,53 @@
 
 El proyecto esta dividido en varios grupos de proyectos. (32~) La siguientes son las carpetas de SRC
 
-#ApiGetaways
+## ApiGetaways
 Se crea una puerta de enlace de API por cada proyecto de implementacion por eso se crea un proyecto para la parte web, como otro para la parte Mobil, esto con la finalidad de segmentar funcionalidades y operaciones en el Api Getaway. 
 Envoy permite enrutar las peticiones, de acuerdo a una arquitectura de proxy.
 
-#Mobile 
+## Mobile 
 Maneja toda la implementacion de Xamarin para ejecutar el aplicativo. 
 
-#Web
+## Web
 Maneja toda la implementacion de web dil aplicativo entre la cual esta
-## WebMVC IMPLEMENTACION REALIZADA EN ASP MVC
-## WebSPA IMPLEMENTACION REALIZADA CON ANGULAR
-## WebStatus swager para ver los estados de los servicios y del proyecto en general
-## WebhookCliet
+#### WebMVC 
+IMPLEMENTACION REALIZADA EN ASP MVC
+#### WebSPA 
+IMPLEMENTACION REALIZADA CON ANGULAR
+#### WebStatus 
+Swager para ver los estados de los servicios y del proyecto en general
+#### WebhookCliet
 
-# Services
+## Services
 Los servicios estan divididos en la carpeta de Servicios los cuales estan expuestos por medio de apis en su mayoria para los diferentes proyectos.
 
+#### Basket
+Microservicio para el carrito de compras
+#### Catalog
+Microservicio para administrar el catalogo de productos
+#### Identidad
+Microservicio para autenticacion y seguridad del sistema
+#### Location
+Microservicio para servicios de Localizacion
+#### Marketing
+Microservicio para campañas y implementar la localizacion
+#### Ordering
+Microservicio para pedidos y compradores
+#### Payment
+Microservicio para la pasarela de pagos
+#### Webhooks
+Microservicio de webhooks msg. 
+
+## Test
+Almacena los proyectos de pruebas unitarias y funcionales para cada uno de los proyectos. adicional a esto cada proyecto tiene su propio subproyecto de pruebas. para efectos de implementacion rapida estos proyectos han sido deshabilitados de la solucion original ya que nos basamos mas en la implementacion que en la parte de pruebas. 
+
+####
+####
+####
+####
+####
+####
+####
 
 
 
