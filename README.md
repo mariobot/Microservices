@@ -191,7 +191,24 @@ Simplifica la implementacion de Inyeccion de Dependencias para ser en funcion de
 Es la capacidad de recuperarse de errores y seguir funcionando. No se trata de evitar los errores, sino de aceptar el hecho de que se producirán errores y responder a ellos para evitar el tiempo de inactividad o la pérdida de datos.
 ### Patrón de interruptor. 
 En este enfoque, el proceso de cliente supervisa el número de solicitudes con error. Si la tasa de errores supera el límite establecido, se activa un "interruptor" para que los intentos adicionales fallen de inmediato. (Si se producen errores en un gran número de solicitudes, esto sugiere que el servicio no está disponible y que enviar solicitudes no sirve de nada.) Tras un período de tiempo de expiración, se verifica el funcionamiento y se desactivar el interruptor.
+### Conexiones Recilientes
+Hace mencion a las conexiones que agrupan un grupo de ejecucuiones en conjunto para su correcto flujo. Implementaciones de beginTransactions para ejecuciones agrupadas las cuales dependan de su correcta ejecucuion para hacer commit o se comporten ante un error mediante un roolback. Transacciones. 
+### IHttpClientFactory
+Se puede usar para configurar y crear instancias de HttpClient en una aplicación a través de la inserción de dependencias (DI). Es la correcta implementacion del HttpClient. 
+### Usos IHttpClientFactory
+Uso básico, Usar clientes con nombre, Usar clientes con tipo, Usar clientes generados
+### Polly
+Biblioteca de control de errores transitorios y resistentes
+### Estrategias de vibracion
+Permite realizar reintentos de conexion de manera aleatoria para que los errores de conectividad no se realicen de manera fija por un determinado tiempo o numero de intentos sino que sea provistos de una manera aleatoria. 
+### Patrón de reintento
+Permite que una aplicación reintente una operación con la expectativa de que finalmente se realice correctamente. 
+### El patrón de interruptor 
+Impide que una aplicación realice una operación que es probable que falle pero la lógica de reintento debe ser sensible a las excepciones devueltas por el interruptor, y debe dejar de intentar repetir la operación si el interruptor indica que un error no es transitorio.
 ### 
+###
+###
+###
 ###
 ###
 ###
