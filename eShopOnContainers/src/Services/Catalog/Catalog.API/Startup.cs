@@ -154,8 +154,9 @@ namespace Microsoft.eShopOnContainers.Services.Catalog.API
             });
 
             return services;
-        }
+        }       
 
+        // En esta parte se define los monitores de estado
         public static IServiceCollection AddCustomHealthCheck(this IServiceCollection services, IConfiguration configuration)
         {
             var accountName = configuration.GetValue<string>("AzureStorageAccountName");
@@ -163,6 +164,7 @@ namespace Microsoft.eShopOnContainers.Services.Catalog.API
 
             var hcBuilder = services.AddHealthChecks();
 
+            // Este motinor de estado verifica el funcionamiento de la base de datos
             hcBuilder
                 .AddCheck("self", () => HealthCheckResult.Healthy())
                 .AddSqlServer(

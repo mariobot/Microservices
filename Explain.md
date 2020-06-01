@@ -105,23 +105,23 @@ git commit
 ```
 #Formatear codigo en su lenguaje
 ### C# Code
-```C#
+``` C#
 public string Consultar(string nombre)
 {
     return DAL.Persona.Consultar(nombre);
 }
 ```
 ### Python Code
-```python
+``` python
 def calc_position(lat,long):
     return located(lat,long)
 ```
 ### Razor Code
-```HTML+Razor
+``` HTML+Razor
 @Html.Action("Index","Home")
 ```
 ###  SQL Code
-```SQL
+``` SQL
 SELECT * FROM STUTENTS
 ```
 

@@ -205,11 +205,15 @@ Permite realizar reintentos de conexion de manera aleatoria para que los errores
 Permite que una aplicación reintente una operación con la expectativa de que finalmente se realice correctamente. 
 ### El patrón de interruptor 
 Impide que una aplicación realice una operación que es probable que falle pero la lógica de reintento debe ser sensible a las excepciones devueltas por el interruptor, y debe dejar de intentar repetir la operación si el interruptor indica que un error no es transitorio.
+### HealthChecks
+Mecanismo que permite verificar el correcto funcionamiento de una API
+### hc
+Ruta especificada para verificar los estados por ejemplo 0.0.0.0:0000/hc Mostrara los estados de las apis del dominio
+### Un guardián 
+Es un servicio independiente que puede observar el estado y la carga en varios servicios, e informar del estado de los microservicios con una consulta con la biblioteca HealthChecks 
+### HealthChecks.UI
+Se puede usar para mostrar los resultados de comprobación de estado de los URI configurados de manera grafica.
 ### 
-###
-###
-###
-###
 ###
 ###
 ###
