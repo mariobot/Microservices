@@ -44,6 +44,11 @@ Microservicio de webhooks msg.
 ## Test
 Almacena los proyectos de pruebas unitarias y funcionales para cada uno de los proyectos. adicional a esto cada proyecto tiene su propio subproyecto de pruebas. para efectos de implementacion rapida estos proyectos han sido deshabilitados de la solucion original ya que nos basamos mas en la implementacion que en la parte de pruebas. 
 
+# Tenga en cuenta
+Para ejecutar el proyecto es recomendable deshabilitar todos los proyectos de Testing. 
+Debe tener instalado Docker para Windows como Visual Studio 2019
+Tambien puede acceder y ejecutar con VS Code pero es un poco mas dispendiosa la ejecucion. 
+
 ####
 ####
 ####
