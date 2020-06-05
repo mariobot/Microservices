@@ -9,7 +9,7 @@ This Repository hold all the projects to study Microservices apply to .Net Archi
 
 This repository collect all the practice concepts from the book .Net Microservices Architecture for Containerized .Net Applications. For an easy understanding I collect the important concepts from de book to a resume document. 
 
-All the documentation was writed at SPANISH for fast and easy understanding.
+*All the documentation was writed at SPANISH for fast and easy understanding.*
 [Explicación del proyecto](https://github.com/mariobot/Microservices/tree/master/Explain.md)
 --------------------------------------------------------------------------------------------
 ## LISTA DE CONCEPTOS 
@@ -257,6 +257,15 @@ Nuestro mundo moderno de contenedores y microservicios puede exponer nuevas vuln
 solución segura debe seguir los procedimientos recomendados de seguridad, como cifrar secretos mientras están en tránsito y en reposo e impedir que los secretos se filtren cuando la aplicación final los consuma. Esos secretos deben almacenarse y guardarse de forma segura.
 ### Orquestadores
 Los orquestadores basados en contenedores, como Azure Kubernetes Service y Azure Service Fabric, representan una parte fundamental de todo microservicio significativo y aplicación basada en contenedores. Estas aplicaciones llevan consigo gran complejidad, necesidades de escalabilidad y evolucionan constantemente. En esta guía se han presentado orquestadores y su rol en las soluciones basadas en microservicio y contenedor. Si sus necesidades de aplicación lo están dirigiendo hacia aplicaciones en contenedores complejas, le resultará útil para buscar recursos adicionales que le permitan obtener más información sobre los orquestadores.
+
+
+
+
+                                                                                *Si llego hasta este punto y leyo la mayoria de la documentacion lo felicito.*
+
+                                                                                *Redactado por Mario Botero*
+                                                                                *[@Mariobot](https://www.twitter.com/mariobot)*
+                                                                                *[wordpres.mariobot.com](https://wordpres.mariobot.com)*
 
 
 
