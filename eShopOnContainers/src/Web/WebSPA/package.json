@@ -43,7 +43,7 @@
     "acorn-dynamic-import": "4.0.0",
     "bootstrap": "4.4.1",
     "core-js": "^3.0.0",
-    "file-loader": "2.0.0",
+    "file-loader": "6.2.0",
     "font-awesome": "4.7.0",
     "isomorphic-fetch": "2.2.1",
     "jquery": "3.5.0",
@@ -56,7 +56,7 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.803.23",
+    "@angular-devkit/build-angular": "15.0.4",
     "@angular/cli": "8.3.23",
     "@angular/compiler-cli": "8.2.14",
     "@angular/language-service": "8.2.14",
@@ -87,7 +87,7 @@
     "tslint": "^5.14.0",
     "typedoc": "^0.15.8",
     "typescript": "3.4.5",
-    "url-loader": "1.1.1",
-    "webpack": "^4.42.1"
+    "url-loader": "4.1.1",
+    "webpack": "^5.75.0"
   }
 }
